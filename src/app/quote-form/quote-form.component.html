@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>add your quote here</h1>
+    <form #quoteForm="ngForm" (submit)="getQuote(quoteForm.value)">
+          <label for="name"></label>
+          <input type="text" ngModel name="name" placeholder="Enter user name">
+           <br>
+           <input type="text" ngModel name="email" placeholder="Enter user email">
+           <br>
+           <input type="text" ngModel name="password" placeholder="Enter users password">
+            <br>
+          <button>submit</button>
+      </form>
+</div>
+<ul>
+    <li>{{userQuote.name}}</li>
+    <li>{{userQuote.email}}</li>
+    <li>{{userQuote.password}}</li>
+</ul>

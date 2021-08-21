@@ -7,6 +7,11 @@ import {NgForm} from '@angular/forms'
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
+  userQuote:any={};
+  getQuote(quote:NgForm){
+    console.warn(quote)
+    this.userQuote=quote
+  }
   
     
 
