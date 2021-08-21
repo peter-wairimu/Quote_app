@@ -1,0 +1,7 @@
+.name{
+ display: grid;
+ place-items: center;
+ text-align: center;
+ color: #fff;
+ padding-top: 3rem;
+}
