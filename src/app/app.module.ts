@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteComponent } from './quote/quote.component';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { QuoteComponent } from './quote/quote.component';
     HeaderComponent,
     FooterComponent,
     QuoteFormComponent,
-    QuoteComponent
+    QuoteComponent,
+    QuoteDetailComponent
   ],
   imports: [
     BrowserModule,
