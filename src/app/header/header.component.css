@@ -1,5 +1,27 @@
-nav{
-    background-color: rgb(53, 51, 148);
+.bar{
+    
     font-family: 'Rampart One', cursive;
+    
+}
+.bar ul{
+    list-style: none;
+    float: right;
+}
+ul li{
+    padding: 0.2rem;
+    display: inline-block;
+    
+
+
+}
+li a{
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 0.02rem;
     font-size: 0.9rem;
+    text-transform: uppercase;
+    
+}
+header{
+    background-image: url("../../assets/");
 }
