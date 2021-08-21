@@ -1,11 +1,14 @@
 <ul>
     <div *ngFor='let quote of quotes;let i = index'>
         
-        <li appUnderline>{{quote.author}}</li>
-        <li appUnderline> By:{{quote.quote}}</li>
-        <button (click)='toggleDetails(i)'>Toggle Details</button>
+        <li appUnderline>{{quote.author}} <br> created on {{quote.completeDate | date}}</li>
+        <li appUnderline> By:{{quote.quote}} </li>
+        <button (click)="counter('minus')" >minus</button>
+         <p>vote : {{vote}} </p>
+         <button (click)="counter('add')">plus</button><br>
+        <button (click)='toggleDetails(i)'>Click here</button>
         <div *ngIf='quote.showDescription'>
-        <app-quote-detail  [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-detail>
+        <app-quote-detail  [quote]='quote'(isComplete)='deleteQuote($event,i)'></app-quote-detail>
         </div>
       </div>
     </ul>

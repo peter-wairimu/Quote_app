@@ -47,6 +47,12 @@ export class QuoteComponent implements OnInit {
       this.quotes.splice(index,1)
     }
     }
+    vote= 0;
+  counter(type:string){
+    
+    type==='add'?this.vote++:this.vote--
+  }
+
   constructor() { }
 
   ngOnInit(): void {
