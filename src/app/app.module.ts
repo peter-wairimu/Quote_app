@@ -10,6 +10,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteDetailComponentComponent } from './quote-detail-component/quote-detail-component.component';
+import { UnderlineDirective } from './underline.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { QuoteDetailComponentComponent } from './quote-detail-component/quote-de
     QuoteFormComponent,
     QuoteComponent,
     QuoteDetailComponent,
-    QuoteDetailComponentComponent
+    QuoteDetailComponentComponent,
+    UnderlineDirective
   ],
   imports: [
     BrowserModule,
