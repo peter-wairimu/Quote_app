@@ -13,29 +13,29 @@ export class QuoteComponent implements OnInit {
     
        new Quote("For every minute you are angry you lose sixty seconds of happiness",
        "Ralph Waldo Emerson",
-       "I travelled abroad on a bike and arrived safely"
+       "I travelled abroad on a bike and arrived safely", new Date(2020,6,8)
        ),
   
       new Quote("Love is that condition in which the happiness of another person is essential to your own.",
        "Robert A. Heinlein",
-       "I travelled abroad on a bike and arrived safely"
+       "I travelled abroad on a bike and arrived safely", new Date(2020,6,8)
       ),
   
       new Quote("Folks are usually about as happy as they make their minds up to be",
        " Abraham Lincoln",
-       "I travelled abroad on a bike and arrived safely"),
+       "I travelled abroad on a bike and arrived safely", new Date(2020,6,8)),
   
       new Quote("Time you enjoy wasting is not wasted time.",
        "Marthe Troly-Curtin",
-       "I travelled abroad on a bike and arrived safely"),
+       "I travelled abroad on a bike and arrived safely", new Date(2020,6,8)),
   
       new Quote("It's so hard to forget pain, but it's even harder to remember sweetness. We have no scar to show for happiness. We learn so little from peace.",
        "Chuck Palahniuk",
-       "I travelled abroad on a bike and arrived safely"),
+       "I travelled abroad on a bike and arrived safely", new Date(2020,6,8)),
   
       new Quote("Happiness in intelligent people is the rarest thing I know.",
        "Ernest Hemingway",
-       "I travelled abroad on a bike and arrived safely"),
+       "I travelled abroad on a bike and arrived safely", new Date(2020,6,8)),
 
   
   ];

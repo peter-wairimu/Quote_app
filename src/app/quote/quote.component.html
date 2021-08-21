@@ -2,6 +2,7 @@
     <div *ngFor='let quote of quotes;let i = index'>
         
         <li appUnderline>{{quote.author}}</li>
+        <li appUnderline> By:{{quote.quote}}</li>
         <button (click)='toggleDetails(i)'>Toggle Details</button>
         <div *ngIf='quote.showDescription'>
         <app-quote-detail  [quote]='quote'(isComplete)='completeQuote($event,i)'></app-quote-detail>
