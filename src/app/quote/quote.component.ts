@@ -43,7 +43,7 @@ export class QuoteComponent implements OnInit {
 
   addNewQuote(quote:Quote){
     let quoteLength = this.quotes.length;
-    quote.id = quoteLength+1;
+    quote.id= quoteLength+1;
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
@@ -56,11 +56,7 @@ export class QuoteComponent implements OnInit {
       this.quotes.splice(index,1)
     }
     }
-    vote= 0;
-  counter(type:string){
     
-    type==='add'?this.vote++:this.vote--
-  }
 
   constructor() { }
 

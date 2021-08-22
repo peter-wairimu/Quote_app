@@ -7,20 +7,20 @@
           <div class="card" style="width: 18rem;">
             <div class="card-body">
               <div class="container">
-        <li appUnderline>{{quote.author}} <br> created on {{quote.completeDate | date}}</li>
-        <li appUnderline> By:{{quote.quote}} </li>
-        <button class="btn" (click)="counter('minus')" >minus</button>
-         <p>vote : {{vote}} </p>
-         <button class="btn" (click)="counter('add')">plus</button><br><br>
-        <button class="btn" (click)='toggleDetails(i)'>Click here</button>
-        </div>
+                 <li appUnderline>{{quote.author}} </li>
+                 <li>Created on {{quote.completeDate | date}}</li>
+                 <li appUnderline> Author : {{quote.quote}} </li>
+                 <button class="btn" (click)='toggleDetails(i)'>Click here</button><br><br>
+                 <div *ngIf='quote.showDescription'>
+                  <app-quote-detail  [quote]='quote'(isComplete)='deleteQuote($event,i)'></app-quote-detail>
+           </div>
+            </div>
           </div>
+          
           </div>
         </div>
         </div>
-        <div *ngIf='quote.showDescription'>
-        <app-quote-detail  [quote]='quote'(isComplete)='deleteQuote($event,i)'></app-quote-detail>
-        </div>
+        
       </div>
     </ul>
 

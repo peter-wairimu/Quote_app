@@ -15,6 +15,11 @@ export class QuoteDetailComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete)
   }
+  vote= 0;
+  counter(type:string){
+    
+    type==='add'?this.vote++:this.vote--
+  }
 
   constructor() { }
 
