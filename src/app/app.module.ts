@@ -12,6 +12,11 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteDetailComponentComponent } from './quote-detail-component/quote-detail-component.component';
 import { UnderlineDirective } from './underline.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import{MatCardModule} from '@angular/material/card';
+import{FlexLayoutModule} from '@angular/flex-layout'
+import {MatButtonModule} from '@angular/material/button'
+import {MatToolbarModule} from '@angular/material/toolbar'
+
 
 @NgModule({
   declarations: [
@@ -29,7 +34,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    FlexLayoutModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

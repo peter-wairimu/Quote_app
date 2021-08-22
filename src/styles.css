@@ -22,9 +22,9 @@ body{
     background-color: rgb(207, 143, 143);
     border-radius: 0.8rem;
     color: rgb(19, 95, 70);
-    font-style: italic;
-    
-}
+    font-style: italic; }
+     
+
 .btn{
     color: rgb(17, 90, 66);
     background-color: azure;
@@ -32,5 +32,6 @@ body{
     text-transform: capitalize;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html{
+    scroll-behavior: smooth;
+}
