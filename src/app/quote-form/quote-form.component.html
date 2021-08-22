@@ -5,14 +5,16 @@
                 <div class="form-group">
                    <label for="name">Enter name</label>
                     <input type="text" class="form-control" [(ngModel)]="newQuote.author" name="name" #name="ngModel" required>
+                    <p style="color: red;" *ngIf="name && name.invalid && name.touched">input you name</p>
                 </div>
                 <div class="form-group">
                     <label for="quote">Write your Quote here!</label>
                     <textarea class="form-control" id="Quote" rows="5" [(ngModel)]="newQuote.quote" name="quote" #quote ="ngModel" required></textarea>
+                    <p style="color: red;" *ngIf="quote && quote.invalid && quote.touched">Put Your  Quote Here</p>
                 </div>
                 <div class="form-group">
                     <input type="date" id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required><br><br>
-                    <button type="submit" class="btn" >Add quote</button>
+                    <button [disabled]='quoteForm.invalid' type="submit" class="btn" >Add quote</button>
               </div>
 
             </form>

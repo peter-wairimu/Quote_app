@@ -6,10 +6,10 @@
     <div fxFlex="40%"brfxFlex.xs fxFlex.xs  *ngFor='let quote of quotes;let i = index'>
       <mat-card class="mat-elavation-z4">
         <mat-card-header>
-          <h1>My Quote</h1>
+          <h1 class="h1">My Quote</h1>
         </mat-card-header>
         <mat-card-content>
-          <ul>
+          <ul class="quote">
           <li appUnderline>{{quote.author}} </li>
                  <li>Created on {{quote.completeDate | date}}</li>
                  <li appUnderline> Author : {{quote.quote}} </li>

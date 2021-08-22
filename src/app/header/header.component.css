@@ -24,4 +24,6 @@ li a{
     color: #40f4fafb;
     font-weight: 700;
 }
-
+li a:hover{
+    color: beige;
+}

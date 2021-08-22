@@ -1,6 +1,6 @@
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { Quote } from './quote';
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
+
+
 }

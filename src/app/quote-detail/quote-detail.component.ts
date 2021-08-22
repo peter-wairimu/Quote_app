@@ -16,7 +16,7 @@ export class QuoteDetailComponent implements OnInit {
     this.isComplete.emit(complete)
   }
   vote= 0;
-  counter(type:string){
+  count(type:string){
     
     type==='add'?this.vote++:this.vote--
   }

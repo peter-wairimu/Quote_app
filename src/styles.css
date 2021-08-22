@@ -19,7 +19,7 @@ body{
 }
 
 .card{
-    background-color: rgb(207, 143, 143);
+    background-color: rgb(33, 173, 127);
     border-radius: 0.8rem;
     color: rgb(19, 95, 70);
     font-style: italic; }
@@ -34,4 +34,7 @@ body{
 
 html{
     scroll-behavior: smooth;
+}
+.h1{
+    color: rgb(18, 110, 80);
 }
