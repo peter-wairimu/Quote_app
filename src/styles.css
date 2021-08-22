@@ -8,9 +8,8 @@
     
 }
 
-
 body{
-    background-image: url("/home/moringa/Documents/angular-quotes/src/assets/ben2.jpg");
+    background-image: url("/../assets/ben2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,7 +19,7 @@ body{
 }
 
 .card{
-    background-color: rgb(33, 173, 127);
+    background-color: rgb(45, 170, 128);
     border-radius: 0.8rem;
     color: rgb(19, 95, 70);
     font-style: italic; }
