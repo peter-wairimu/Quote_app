@@ -16,7 +16,7 @@
                  </ul>
         </mat-card-content>
         <mat-card-actions>
-          <button class="btn" (click)='toggleDetails(i)'>Click here</button><br><br><br>
+          <button class="btn" (click)='toggleDetails(i)'>Click here</button><br><br>
           <div *ngIf='quote.showDescription'>
             <app-quote-detail  [quote]='quote'(isComplete)='deleteQuote($event,i)'></app-quote-detail>
            </div>
