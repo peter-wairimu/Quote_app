@@ -1,16 +1,28 @@
+
+
 <ul>
     <div *ngFor='let quote of quotes;let i = index'>
-        
+      <div class="row">
+        <div class="col mb-5 align-self-center">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <div class="container">
         <li appUnderline>{{quote.author}} <br> created on {{quote.completeDate | date}}</li>
         <li appUnderline> By:{{quote.quote}} </li>
-        <button (click)="counter('minus')" >minus</button>
+        <button class="btn" (click)="counter('minus')" >minus</button>
          <p>vote : {{vote}} </p>
-         <button (click)="counter('add')">plus</button><br>
-        <button (click)='toggleDetails(i)'>Click here</button>
+         <button class="btn" (click)="counter('add')">plus</button><br><br>
+        <button class="btn" (click)='toggleDetails(i)'>Click here</button>
+        </div>
+          </div>
+          </div>
+        </div>
+        </div>
         <div *ngIf='quote.showDescription'>
         <app-quote-detail  [quote]='quote'(isComplete)='deleteQuote($event,i)'></app-quote-detail>
         </div>
       </div>
     </ul>
+
     <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-    <p *ngIf='quotes.length > 5'>You have too many goals</p>
+    <!-- <p *ngIf='quotes.length > 5'>You have too many goals</p> -->
