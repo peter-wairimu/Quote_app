@@ -1,14 +1,24 @@
 <div class="container">
     <div class="card w-75 h-68">
         <div class="card-body">
-            <form #quoteForm="ngForm" (submit)="getQuote(quoteForm.value)">
-                <label for="name">Enter name</label>
-                <input type="text" class="form-control" [(ngModel)]newQuote>
-                <button>submit</button>
-              </form>
-          
-        </div>
+            <form #quoteForm (ngSubmit)="getQuote()">
+                <div class="form-group">
+                   <label for="name">Enter name</label>
+                    <input type="text" class="form-control" [(ngModel)]="newQuote.author" name="name" #name="ngModel" required>
+                <h6>Name is required</h6>
+                </div>
+                <div class="form-group">
+                    <label for="quote">Write your Quote here!</label>
+                    <textarea class="form-control" id="Quote" rows="5" [(ngModel)]="newQuote.quote" name="quote" #quote ="ngModel" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+                    <button type="submit" class="btn btn-success" >Add quote</button>
+              </div>
+
+            </form>
       </div>
     
+</div>
 </div>
 
